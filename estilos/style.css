@@ -9,51 +9,177 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-table.menu {
+nav.menu {
     background-color: red;
     width: 100%;
     height: 10vh;
+    text-align: center;
+    
     
 }
-table.menu td {
-    width: 25%;
-    text-align: center;
-}
-table.menu a {
+
+nav.menu a {
+    display: inline-block;
     color: white;
     text-decoration: none;
+    padding-top: 4vh;
+    margin: 0 150px;
+
+    
+
 }
 
-table.menu a:hover {
+.menu a:hover {
     color: brown;
-    font-size: 1.1em;
+    font-size: 1em;
     text-decoration: underline;
+    cursor: pointer;
 
 }
 
-table.produto td.item {
-    width: 20%;
-    padding: 20px;
-    vertical-align: top;
+header > h2 {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+section.categoria {
+    
+    width: 15%;
+    height: 100%;
+    float: left;
     
 
+    
 }
 
-table.produto td.item > h3 {
-    padding-bottom: 10px;
+section.categoria h3 {
+    margin-left: 10px;
+    padding: 10px 0px;
+
 }
-td.prdt {
-    width: 300px;
+section.categoria > ul {
+    display: block;
+}
+.categoria > ul > li {
+    display: block;
+    
+    margin: 7px;
+   border-bottom: 1px solid black;
+}
+
+section.produtos {
+    width: 85%;
+    
+    float: left;
+}
+
+
+.box_produto {
+    display: inline-block;
+    width: 30%;
+    margin: 10Px 10px;
+   
+}
+.box_produto img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+     
+}
+.descricao {
     text-align: center;
+}
+.preco{
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}
+div.foot {
+    text-align: center;
+    padding: 20px;
+}
+
+div.end {
+    display: inline-block;
+    padding-inline: 100px;
+}
+
+div.end > h3 {
+    padding: 20px 0px;
+}
+
+div.end > p {
+    line-height: 1.6em;
+}
+
+span.tel {
+    padding: 20px;
+    margin-left: 300px;
+    font-weight: bold   ;
+
+}
+
+div.contato > form {
+    padding-left: 20px;
     
 }
-td.prdt > img {
-    width: 25%;
-    padding: 20px 20px 0px 20px;
+
+div.contato form label {
+    display: inline;
+   
 }
-td.prdt > span {
-    color: red;
+
+div.contato form input#inome {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px 0px;
 }
-td.prdt > p {
-    font-size: 0.9em;
+
+div.contato form textarea#imensagem {
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+div.contato > form > input#envia, input#limpa {
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    margin: 15px 0px;
+    border-radius: 4px;
+    
+}
+
+div.contato > form input#envia:hover{
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+div.contato > form input#limpa:hover{
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.foot {
+    padding-top: 300px;
+    
+}
+
+.foot > h4 {
+   color: red;
+    
+}
+
+ footer > p {
+    color: blue;
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
 }

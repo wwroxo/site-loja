@@ -8,21 +8,42 @@
     <title>Contato - Full Stek Eletro</title>
 </head>
 <body>
-    <table class="menu">
-        <tr>
-            <td><a href="index.html">Página inicial</a></td>
-            <td><a href="produtos.html">Produtos</a></td>
-            <td><a href="loja.html">Nossas lojas</a></td>
+    <nav class="menu">
+        
+        <a href="index.html">Página inicial</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas lojas</a>
             
-        </tr>
-    </table>
-    <h2>Contato</h2>
+        
+    </nav>
+    
+    <header>
+        <h2>Contato</h2>
+    </header>
     
     
    
     <hr>
-    <h4>Formas de pagamento</h4>
-    <a href="#"><img src="../imagens/formasdepagamento.png" alt="Formas de pagamento"></a>
+
+    <span class="tel"><img src="./imagens/icons8-email-64.png" alt="email"><em>contato@fullsteck.com</em> </span>
+    <span class="tel">(011)99999999-99<img src="./imagens/icons8-whatsapp-100.png" alt="whatsapp" width="50px"></span>
+    <div class="contato">
+        <form>
+            <label for="inome">Nome: </label><br>
+            <input type="text" name="nome" id="inome" required placeholder=" nome e sobre nome" minlength="5" maxlength="40"><br>
+            <label for="imensagem">Mensagem: </label><br>
+            <textarea name="texto" id="imensagem" cols="30" rows="10"> nos conte um pouco sua experiência...</textarea><br>
+            <input type="submit" id="envia" value="Enviar">
+            <input type="reset" id="limpa" value="Limpar">
+        </form>
+    </div>
+
+    <div class="foot">
+        
+        <h4>Formas de pagamento</h4>
+        <a href="#"><img src="../imagens/formasdepagamento.png" alt="Formas de pagamento"></a>
+        <footer><p>&copy;By Walmor Roxo</p></footer>
+    </div>
     
 </body>
 </html>
