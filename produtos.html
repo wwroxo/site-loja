@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="javascript/jvascript.js"></script>
     <title>Produtos - Full Stek Eletro</title>
 </head>
 <body>
@@ -20,21 +21,22 @@
     </header>
     
     <hr>
-    <section class="categoria">
+    <section class="categoria" id="geladeira">
     
                 <h3>Categorias</h3>
                 <ul>
-                    <li>Geladeiras (3)</li>
-                    <li>Fogões (2)</li>
-                    <li>Microondas (3)</li>
-                    <li>Lavadoras de roupas (2)</li>
-                    <li>Lava-louças (2)</li>
+                    <li onclick="exibir_todos()">Todos (12)</li>
+                    <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+                    <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+                    <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+                    <li onclick="exibir_categoria('lavaroupas')">Lavadoras de roupas (2)</li>
+                    <li onclick="exibir_categoria('lavaloucas')">Lava-louças (2)</li>
                 </ul>
     </section>
-        <section class="produtos">
+        <section class="produtos" >
             
-                    <div class="box_produto">
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
+                    <div class="box_produto" id="geladeira" style="display: block;">
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
                         <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
@@ -43,19 +45,19 @@
                         </span>
                     </div>
                 
-                <div class="box_produto">
+                <div class="box_produto" id="geladeira" style="display: inline-block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
                         <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         <p class="preco">por R$ 5.550,00</p>
                     
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="fogao" style="display: inline-block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Fogão frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -64,10 +66,10 @@
                    
                 </div>
 
-                <div class="box_produto">
+                <div class="box_produto" id="fogao" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Fogão frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -78,10 +80,10 @@
                 </div>
                 
             
-                <div class="box_produto">
+                <div class="box_produto" id="fogao" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Fogão frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -89,10 +91,10 @@
                         
                     
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="microondas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Micro frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -100,10 +102,10 @@
                         
                    
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="microondas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Micro frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -111,10 +113,10 @@
                         
                     
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="microondas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Micro frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                        
@@ -124,10 +126,10 @@
                 </div>
             
            
-                <div class="box_produto">
+                <div class="box_produto" id="lavaroupas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Lavaroupas frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -135,10 +137,10 @@
                         
                     
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="lavaroupas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Lavaroupas frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
@@ -146,10 +148,10 @@
                        
                   
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="lavaroupas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Lavaroupas frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                        
@@ -157,14 +159,14 @@
                        
                    
                 </div>
-                <div class="box_produto">
+                <div class="box_produto" id="lavaloucas" style="display: block;">
                     
-                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%"><br>
-                        <p class="descricao">Geladeira frost free Brastemp inverter 540 litros</p><br>
+                        <img src="imagens/geladeira.jpg" alt="geladeira" width="15%" onclick="destaque(this)"><br>
+                        <p class="descricao">Lavaloças frost free Brastemp inverter 540 litros</p><br>
                         <hr>
                         <p class="descricao">de<del> R$ 6.389,00</del></p>
                         
-                            <p class="preco">por R$ 5.550,00</p>
+                            <p class="preco">por R$ 4.550,00</p>
                         
                 </div>
                                      
